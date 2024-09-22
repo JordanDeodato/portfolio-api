@@ -32,7 +32,7 @@ class CustomerRepository
      */
     public function get()
     {
-        return $this->model->get();
+        return $this->model->active->get();
     }
 
     /**

@@ -53,7 +53,7 @@ class CustomerController extends Controller
             return response()->json([
                 "message" => $e->getMessage(),
                 "success" => false
-            ], 500);
+            ], 400);
         }
     }
 
@@ -78,7 +78,7 @@ class CustomerController extends Controller
             return response()->json([
                 "message" => $e->getMessage(),
                 "success" => false
-            ], 500);
+            ], 400);
         }
     }
 
@@ -96,13 +96,13 @@ class CustomerController extends Controller
             return response()->json([
                 "message" => "Customer created successfully.",
                 "success" => true
-            ], 200);
+            ], 201);
 
         } catch(Exception $e) {
             return response()->json([
                 "message" => $e->getMessage(),
                 "success" => false
-            ], 500);
+            ], 400);
         }
     }
 
@@ -127,7 +127,7 @@ class CustomerController extends Controller
             return response()->json([
                 "message" => $e->getMessage(),
                 "success" => false
-            ], 500);
+            ], 400);
         }
     }
 
@@ -151,7 +151,7 @@ class CustomerController extends Controller
             return response()->json([
                 "message" => $e->getMessage(),
                 "success" => false
-            ], 500);
+            ], 400);
         }
     }
 }
